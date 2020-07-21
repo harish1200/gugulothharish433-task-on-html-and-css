@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Registration Form">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="shortcut icon" href="dowmloads/favicon.ico ">
+</head>
+<body>
+
+<div class="sign-in-form">
+<form>
+    <h2>
+    <table cellpadding="9px"  cellspacing="5px" style="width: 120%; height: 30px;">
+        <tr>
+    <td><img src="https://img.icons8.com/ios-filled/40/000000/education.png"/></td>
+<td>LOGIN</td>
+<td><img src="https://img.icons8.com/ios-glyphs/40/000000/xbox-x.png"/></td>
+</tr>
+</table>
+</h2>
+
+<form name="login">
+    Username &nbsp;<input type="text" name="userid"/>
+    <br>
+    <br>
+    Password &nbsp;<input type="password" name="pswrd"/>
+    <br>
+    <br>
+    <input type="button" onclick="check(this.form)" value="Login"/>
+    &nbsp; &nbsp;
+    <input type="reset" value="Cancel"/>
+    </form>
+   
+    <script language="javascript">
+        function check(form)/*function to check userid & password*/
+        {
+         /*the following code checkes whether the entered userid and password are matching*/
+         if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+          {
+              alert("you have successfully logged in");
+            window.open('target.html')/*opens the target page while Id & password matches*/
+          }
+         else
+         {
+           alert("Error Password or Username")/*displays error message*/
+          }
+        }
+        </script>
+   
+
+<br>
+<br><a href="">Forgot your password?</a>&nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp 
+<a href="C:\Users\ponna Akhil\Desktop\jsp-task\Registeration Form.html">register</a><br>
+
+<hr>
+<p class="or">OR</p>
+<button class="button button1" onclick="window.location.href='https://www.facebook.com/'"  >facebook</button>
+<br>
+<br>
+<button class="button button2"onclick="window.location.href='https://www.google.com/'" >google</button>
+<br>
+<br>
+
+</div>
+
+</body>
+</html>
